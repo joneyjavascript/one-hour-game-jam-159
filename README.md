@@ -1,3 +1,3 @@
-# one-hour-game-jam-template
+# One Hour Game Jam Template
 
-Template for one hour game jam
+This is a basic template for make protótipes in one hour game jam.
