@@ -36,8 +36,8 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     randomPitch: 1
-    randomMin: 0.2
-    randomMax: 0.5
+    randomMin: 0.4
+    randomMax: 0.8
     source: {fileID: 0}
   - name: ui-click
     clip: {fileID: 8300000, guid: b1e5e81e94910704691ac085ead55574, type: 3}

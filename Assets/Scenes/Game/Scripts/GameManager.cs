@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     private void Start()
+    {        
+        playMusic();
+    }
+
+    public void playMusic()
     {
         AudioManager.instance.Play("game-music");
     }
