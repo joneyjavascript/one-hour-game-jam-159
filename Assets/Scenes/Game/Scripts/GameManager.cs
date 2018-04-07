@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
-    
+
+    private void Start()
+    {
+        AudioManager.instance.Play("game-music");
+    }
+
     private float _oldTimeScale;
     private bool paused = false;
-
+    
     public void PauseGame()
     {
         if (paused)
@@ -38,6 +43,7 @@ public class GameManager : MonoBehaviour {
     }
     
     public void GotoScene(string nestSceneName) {
+        AudioManager.instance.Play("ui-back");
         SceneManager.LoadScene(nestSceneName);
     }
 

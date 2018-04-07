@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5c044ab304bf145832c295400e4a92, type: 3}
+  m_Name: Game Sounds
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: menu-music
+    clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.9
+    randomMax: 1
+    source: {fileID: 0}
+  - name: game-music
+    clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: -1
+    randomMax: -0.8
+    source: {fileID: 0}
+  - name: credits-music
+    clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.2
+    randomMax: 0.5
+    source: {fileID: 0}
+  - name: ui-click
+    clip: {fileID: 8300000, guid: b1e5e81e94910704691ac085ead55574, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.8
+    randomMax: 1
+    source: {fileID: 0}
+  - name: ui-back
+    clip: {fileID: 8300000, guid: d4f6df3bffc8e0c44b92eb4dab03f9a1, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.8
+    randomMax: 1
+    source: {fileID: 0}

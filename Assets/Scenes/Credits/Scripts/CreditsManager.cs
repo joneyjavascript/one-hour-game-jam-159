@@ -5,12 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class CreditsManager : MonoBehaviour {
 
-    public void BackToMenu()
+    private void Start()
     {
+        playMusic();
+    }
+
+    public void playMusic() {
+        AudioManager.instance.Play("credits-music");
+    }
+
+    public void BackToMenu()
+    {        
         GotoScene("MenuScene");
     }
     
     public void GotoScene(string nestSceneName) {
+        AudioManager.instance.Play("ui-back");
         SceneManager.LoadScene(nestSceneName);
     }
 

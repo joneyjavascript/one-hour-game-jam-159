@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: afa3b3c145bf50e4486f1a9261c5a94f
+timeCreated: 1521799776
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Computer Speak v0.3
+  fontNames:
+  - Computer Speak v0.3
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
