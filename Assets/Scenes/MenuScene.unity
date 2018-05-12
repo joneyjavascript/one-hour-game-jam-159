@@ -350,7 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Template Adventure
+  m_Text: One Hour Game Jam
 --- !u!222 &571526221
 CanvasRenderer:
   m_ObjectHideFlags: 0
