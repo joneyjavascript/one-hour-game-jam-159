@@ -42,7 +42,7 @@ MonoBehaviour:
   - name: ui-click
     clip: {fileID: 8300000, guid: b1e5e81e94910704691ac085ead55574, type: 3}
     loop: 0
-    volume: 1
+    volume: 0.61
     pitch: 1
     randomPitch: 1
     randomMin: 0.8
@@ -56,4 +56,31 @@ MonoBehaviour:
     randomPitch: 1
     randomMin: 0.8
     randomMax: 1
+    source: {fileID: 0}
+  - name: boom
+    clip: {fileID: 8300000, guid: 3e3ea317dab523a45962212bdf278efe, type: 3}
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.6
+    randomMax: 0.8
+    source: {fileID: 0}
+  - name: cash
+    clip: {fileID: 8300000, guid: e517da48a36c21c4d992bfabc211176b, type: 3}
+    loop: 0
+    volume: 0.4
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.4
+    randomMax: 0.6
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 31b3e372fd5f5f045bbe5ab14229dca9, type: 3}
+    loop: 0
+    volume: 0.4
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.4
+    randomMax: 0.6
     source: {fileID: 0}

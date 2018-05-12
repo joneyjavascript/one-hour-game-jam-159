@@ -51,5 +51,33 @@ public class GameManager : MonoBehaviour {
         AudioManager.instance.Play("ui-back");
         SceneManager.LoadScene(nestSceneName);
     }
+    
+    public void PlayerInteract(PlayerInteraction interaction) {
+        Debug.Log(interaction.type);
+
+        if (interaction.type == "Coin")
+        {
+            Debug.Log("Coin Collect");
+        }
+
+
+        if (interaction.type == "NextScene")
+        {
+            GotoScene(interaction.value);
+        }
+
+        if (interaction.type == "Enemy")
+        {
+            GotoScene("MenuScene");
+        }
+
+        if (interaction.type == "playerHit") {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            PlayerManager manager = player.GetComponent<PlayerManager>();
+            manager.Hit(int.Parse(interaction.value));
+        }
+    }
+
+
 
 }
