@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using RoboRyanTron.Unite2017.Variables;
 
 public class MenuManager : MonoBehaviour {
+
+    public StringVariable CurrentLevel; 
 
     private void Start()
     {
@@ -17,7 +20,13 @@ public class MenuManager : MonoBehaviour {
 
     public void StartGame()
     {
-        GotoScene("GameScene");
+        CurrentLevel.Value = "Level 1";
+        GotoScene("Level 1");
+    }
+
+    public void ContinueGame()
+    {
+        GotoScene(CurrentLevel.Value);
     }
 
     public void SeeCredits()

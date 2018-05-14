@@ -16,14 +16,17 @@ public class PlayerMovement : MonoBehaviour {
     
     Rigidbody2D body;
 
+    HitAreaFlags hitAreaFlags;
+
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        hitAreaFlags = GetComponent<HitAreaFlags>();
     }
 
     // Update is called once per frame
-    void Update () {
-        body.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, body.velocity.y);
+    void FixedUpdate () {
+        body.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, body.velocity.y);
 
         if (currentMovementType == MovementType.FlyGhost)
         {
@@ -31,14 +34,13 @@ public class PlayerMovement : MonoBehaviour {
 
             if (Input.GetButtonDown("Jump"))
             {
-                AudioManager.instance.Play("Jump");
+                AudioManager.instance.Play("FlyGhost");
                 AddVerticalInpulse(flyForce);
             }
         }
         else
         {
-
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && hitAreaFlags.CheckHit("InFloor"))
             {
                 AudioManager.instance.Play("Jump");
                 SetVerticalInpulse(jumptHeight);
@@ -60,6 +62,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         body.velocity = new Vector2(body.velocity.x, body.velocity.y + inpulse);
     }
+
     public void SetMovementType(MovementType newMovementType) {
         this.currentMovementType = newMovementType;
     }

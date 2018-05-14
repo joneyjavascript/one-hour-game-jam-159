@@ -14,12 +14,15 @@ public class SeekTarget : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate() {
+
+        if (target == null)
+        {
+            return;
+        }
 
         Vector3 targetPosition = target.transform.position;
         targetPosition.z = distance;
-
         this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, seekFactor);
-
 	}
 }

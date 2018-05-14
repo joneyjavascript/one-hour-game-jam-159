@@ -15,7 +15,7 @@ MonoBehaviour:
   - name: menu-music
     clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
     loop: 1
-    volume: 1
+    volume: 0.7
     pitch: 1
     randomPitch: 1
     randomMin: 0.9
@@ -24,7 +24,7 @@ MonoBehaviour:
   - name: game-music
     clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
     loop: 1
-    volume: 1
+    volume: 0.7
     pitch: 1
     randomPitch: 1
     randomMin: -1
@@ -33,7 +33,7 @@ MonoBehaviour:
   - name: credits-music
     clip: {fileID: 8300000, guid: 21f0196d0a6a1b341811b596a9e8cbf8, type: 3}
     loop: 1
-    volume: 1
+    volume: 0.7
     pitch: 1
     randomPitch: 1
     randomMin: 0.4
@@ -76,11 +76,56 @@ MonoBehaviour:
     randomMax: 0.6
     source: {fileID: 0}
   - name: Jump
-    clip: {fileID: 8300000, guid: 31b3e372fd5f5f045bbe5ab14229dca9, type: 3}
+    clip: {fileID: 8300000, guid: d94df0727f71f3e478ff647e671a3cb8, type: 3}
     loop: 0
     volume: 0.4
     pitch: 1
     randomPitch: 1
-    randomMin: 0.4
-    randomMax: 0.6
+    randomMin: 0.9
+    randomMax: 1.1
+    source: {fileID: 0}
+  - name: FlyGhost
+    clip: {fileID: 8300000, guid: f98a8ec4ceb26fe49b889babfc6b9702, type: 3}
+    loop: 0
+    volume: 0.2
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.9
+    randomMax: 1.1
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: da776b64fced3594cad5c7e7a8795d3d, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.9
+    randomMax: 1.1
+    source: {fileID: 0}
+  - name: TryingToReach
+    clip: {fileID: 8300000, guid: 063ce16cee2a9a84189db657f7ef8a9f, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.95
+    randomMax: 1.05
+    source: {fileID: 0}
+  - name: CollectOrb
+    clip: {fileID: 8300000, guid: 0e42e268fde4ff740a80b6ccd4390632, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.95
+    randomMax: 1.05
+    source: {fileID: 0}
+  - name: LightOfLife
+    clip: {fileID: 8300000, guid: e3bb66aeba5d3e14a99225ae380134d3, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    randomPitch: 1
+    randomMin: 0.95
+    randomMax: 1.05
     source: {fileID: 0}
